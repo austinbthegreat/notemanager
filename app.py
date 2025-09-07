@@ -24,7 +24,10 @@ def index():
         timeadded = datetime.utcnow()
         collection.insert_one({"content": content, "timestamp": timeadded})
         return redirect("/")
-#comment
+
+
+# comments
+
 
 @app.route("/delete")
 def delete():
